@@ -2,5 +2,21 @@
   .third-section-item {
     background-color: #fff;
     min-height: 100%;
+    padding: 26px 23px 26px 33px;
+    h6 {
+      font: 700 15px/21px "Quattrocento Sans", sans-serif;
+      color: #474747;
+    }
+    .text-box {
+      font: 400 13px/18px "Quattrocento Sans", sans-serif;
+      color: #474747;
+    }
+    .sub-text-box {
+      font: 700 13px/21px "Quattrocento Sans", sans-serif;
+      color: #474747;
+    }
+    .min-height {
+      min-height: 55px;
+    }
   }
 }

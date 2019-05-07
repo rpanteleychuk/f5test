@@ -1,0 +1,19 @@
+.heading-line::before,
+.heading-line::after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 66px;
+  height: 2px;
+  background-color: #0092de;
+  border-width: 0 10px;
+}
+.heading-line::before {
+  margin-left: -100%;
+  margin-right: 10px;
+}
+.heading-line::after {
+  margin-right: -100%;
+  margin-left: 10px;
+}

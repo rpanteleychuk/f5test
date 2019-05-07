@@ -88,66 +88,72 @@ Template Post Type: page
 
                 <div class="section-3 py-5" style="background: url(<?php the_sub_field('background_image'); ?>) no-repeat center;  background-size: cover;">
                     <div class="container">
-                        <div class="row">
+                        <div class="row justify-content-center mb-5">
                             <div class="col">
-                                <h3 class="heading-font text-white text-center"><?php the_sub_field('heading'); ?></h3>
+                                <h3 class="heading-font text-white text-center text-uppercase heading-line"><?php the_sub_field('heading'); ?></h3>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mb-4">
+                            <div class="col col-md-7">
+                                <p class="text-white text-center third-section-subheading-font"><?php the_sub_field('sub_heading'); ?></p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col">
-                                <p class="text-white text-center"><?php the_sub_field('sub_heading'); ?></p>
-                            </div>
-                        </div>
-                        <div class="row row-flex justify-content-around">
-                            <div class="col-4">
-                                <div class="third-section-item py-3 pl-2 pr-1">
-                                    <?php
+                            <div class="col-md-12 col-lg-4 my-2">
+                                <div class="third-section-item">
+                                    <div class="min-height">
+                                        <?php
 
-                                    $image = get_sub_field('first_image');
+                                        $image = get_sub_field('first_image');
 
-                                    if (!empty($image)): ?>
+                                        if (!empty($image)): ?>
 
-                                        <img class="img-fluid d-inline" src="<?php echo $image['url']; ?>"
-                                             alt="<?php echo $image['alt']; ?>"/>
+                                            <img class="img-fluid d-inline" src="<?php echo $image['url']; ?>"
+                                                 alt="<?php echo $image['alt']; ?>"/>
 
-                                    <?php endif; ?>
-                                    <h6 class="d-inline"><?php the_sub_field('first_item_heading'); ?></h6>
-                                    <p><?php the_sub_field('first_item_text'); ?></p>
-                                    <p><?php the_sub_field('first_item_subtext'); ?></p>
+                                        <?php endif; ?>
+                                        <h6 class="d-inline text-uppercase"><?php the_sub_field('first_item_heading'); ?></h6>
+                                    </div>
+                                    <p class="text-box text-justify"><?php the_sub_field('first_item_text'); ?></p>
+                                    <p class="sub-text-box text-justify"><?php the_sub_field('first_item_subtext'); ?></p>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-md-12 col-lg-4 my-2">
                                 <div class="third-section-item">
-                                    <?php
+                                    <div class="min-height">
+                                        <?php
 
-                                    $image = get_sub_field('second_image');
+                                        $image = get_sub_field('second_image');
 
-                                    if (!empty($image)): ?>
+                                        if (!empty($image)): ?>
 
-                                        <img class="img-fluid d-inline" src="<?php echo $image['url']; ?>"
-                                             alt="<?php echo $image['alt']; ?>"/>
+                                            <img class="img-fluid d-inline" src="<?php echo $image['url']; ?>"
+                                                 alt="<?php echo $image['alt']; ?>"/>
 
-                                    <?php endif; ?>
-                                    <h6 class="d-inline"><?php the_sub_field('second_item_heading'); ?></h6>
-                                    <p><?php the_sub_field('second_item_text'); ?></p>
-                                    <p><?php the_sub_field('second_item_subtext'); ?></p>
+                                        <?php endif; ?>
+                                        <h6 class="d-inline text-uppercase"><?php the_sub_field('second_item_heading'); ?></h6>
+                                    </div>
+                                    <p class="text-box text-justify"><?php the_sub_field('second_item_text'); ?></p>
+                                    <p class="sub-text-box text-justify"><?php the_sub_field('second_item_subtext'); ?></p>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-md-12 col-lg-4 my-2">
                                 <div class="third-section-item">
-                                    <?php
+                                    <div class="min-height">
+                                        <?php
 
-                                    $image = get_sub_field('third_image');
+                                        $image = get_sub_field('third_image');
 
-                                    if (!empty($image)): ?>
+                                        if (!empty($image)): ?>
 
-                                        <img class="img-fluid d-inline" src="<?php echo $image['url']; ?>"
-                                             alt="<?php echo $image['alt']; ?>"/>
+                                            <img class="img-fluid d-inline" src="<?php echo $image['url']; ?>"
+                                                 alt="<?php echo $image['alt']; ?>"/>
 
-                                    <?php endif; ?>
-                                    <h6 class="d-inline"><?php the_sub_field('third_item_heading'); ?></h6>
-                                    <p><?php the_sub_field('third_item_text'); ?></p>
-                                    <p><?php the_sub_field('third_item_subtext'); ?></p>
+                                        <?php endif; ?>
+                                        <h6 class="d-inline text-uppercase"><?php the_sub_field('third_item_heading'); ?></h6>
+                                    </div>
+                                    <p class="text-box text-justify"><?php the_sub_field('third_item_text'); ?></p>
+                                    <p class="sub-text-box text-justify"><?php the_sub_field('third_item_subtext'); ?></p>
                                 </div>
                             </div>
                         </div>
