@@ -9,6 +9,12 @@
   font: 700 35px/25px "Quattrocento", serif;
 }
 
+@media (max-width: 575.98px) {
+  .heading-font {
+    font: 700 18px/20px "Quattrocento", serif;
+  }
+}
+
 .description-font {
   font: 400 20px/31px "Quattrocento Sans", sans-serif;
 }

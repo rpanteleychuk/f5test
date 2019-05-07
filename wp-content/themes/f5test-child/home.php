@@ -167,20 +167,20 @@ Template Post Type: page
 
                 <div class="section-4 py-5">
                     <div class="container">
-                        <div class="row">
+                        <div class="row my-4">
                             <div class="col">
                                 <h3 class="heading-font text-center text-uppercase heading-line"><?php the_sub_field('heading'); ?></h3>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12">
-                                <h4><?php the_sub_field('first_article_header'); ?></h4>
+                            <div class="col-12 pt-5 pb-3">
+                                <h4><span><?php the_sub_field('first_article_header'); ?></span></h4>
                             </div>
-                            <div class="col-6">
+                            <div class="col-12 col-md-6 text-justify">
                                 <p><?php the_sub_field('first_article_paragraph_one'); ?></p>
                                 <p><?php the_sub_field('first_article_paragraph_two'); ?></p>
                             </div>
-                            <div class="col-6">
+                            <div class="col-12 col-md-6">
                                 <?php
 
                                 $image = get_sub_field('first_article_image');
@@ -194,10 +194,10 @@ Template Post Type: page
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12">
-                                <h4><?php the_sub_field('second_article_header'); ?></h4>
+                            <div class="col-12 pt-5 pb-3">
+                                <h4><span><?php the_sub_field('second_article_header'); ?></span></h4>
                             </div>
-                            <div class="col-6">
+                            <div class="col-12 col-md-6">
                                 <?php
 
                                 $image = get_sub_field('second_article_image');
@@ -209,23 +209,23 @@ Template Post Type: page
 
                                 <?php endif; ?>
                             </div>
-                            <div class="col-6">
+                            <div class="col-12 col-md-6 text-justify">
                                 <p><?php the_sub_field('second_article_paragraph_one'); ?></p>
                                 <p><?php the_sub_field('second_second_article_paragraph_two'); ?></p>
-                                <p><?php the_sub_field('second_article_sub_header'); ?></p>
+                                <p class="text-bold"><?php the_sub_field('second_article_sub_header'); ?></p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12">
-                                <h4><?php the_sub_field('third_article_header'); ?></h4>
+                            <div class="col-12 pt-5 pb-3">
+                                <h4><span><?php the_sub_field('third_article_header'); ?></span></h4>
                             </div>
-                            <div class="col-6">
+                            <div class="col-12 col-md-6 text-justify">
                                 <p><?php the_sub_field('third_article_paragraph_one'); ?></p>
-                                <p><?php the_sub_field('third_article_sub_header'); ?></p>
+                                <p class="text-bold"><?php the_sub_field('third_article_sub_header'); ?></p>
                                 <p><?php the_sub_field('third_article_paragraph_two'); ?></p>
                                 <p><?php the_sub_field('third_article_paragraph_three'); ?></p>
                             </div>
-                            <div class="col-6">
+                            <div class="col-12 col-md-6">
                                 <?php
 
                                 $image = get_sub_field('third_article_image');
@@ -239,10 +239,10 @@ Template Post Type: page
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12">
-                                <h4><?php the_sub_field('fourth_article_header'); ?></h4>
+                            <div class="col-12 pt-5 pb-3">
+                                <h4><span><?php the_sub_field('fourth_article_header'); ?></span></h4>
                             </div>
-                            <div class="col-6">
+                            <div class="col-12 col-md-6">
                                 <?php
 
                                 $image = get_sub_field('fourth_article_image');
@@ -254,19 +254,19 @@ Template Post Type: page
 
                                 <?php endif; ?>
                             </div>
-                            <div class="col-6">
-                                <p><?php the_sub_field('fourth_article_sub_header'); ?></p>
+                            <div class="col-12 col-md-6 text-justify">
+                                <p class="text-bold"><?php the_sub_field('fourth_article_sub_header'); ?></p>
                                 <p><?php the_sub_field('fourth_article_paragraph_one'); ?></p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12">
-                                <h4><?php the_sub_field('fifth_article_header'); ?></h4>
+                            <div class="col-12 pt-5 pb-3">
+                                <h4><span><?php the_sub_field('fifth_article_header'); ?></span></h4>
                             </div>
-                            <div class="col-6">
+                            <div class="col-12 col-md-6 text-justify">
                                 <p><?php the_sub_field('fifth_article_paragraph_one'); ?></p>
                                 <p><?php the_sub_field('fifth_article_paragraph_two'); ?></p>
-                                <div>
+                                <ul>
                                     <?php if (have_rows('fifth_article_list')): ?>
 
                                         <?php while (have_rows('fifth_article_list')): the_row();
@@ -276,18 +276,14 @@ Template Post Type: page
                                             $list = get_sub_field('list_item');
 
                                             ?>
-
-
-                                            <ul class="panel">
-                                                <li class="answer-font text-grey"><?php echo $list; ?></li>
-                                            </ul>
+                                            <li class="answer-font text-grey"><?php echo $list; ?></li>
                                         <?php endwhile; ?>
                                     <?php endif; ?>
 
-                                </div>
+                                </ul>
                                 <p><?php the_sub_field('fifth_article_paragraph_three'); ?></p>
                             </div>
-                            <div class="col-6">
+                            <div class="col-12 col-md-6">
                                 <?php
 
                                 $image = get_sub_field('fifth_article_image');
