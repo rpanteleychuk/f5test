@@ -14,11 +14,11 @@ Template Post Type: page
 
         while( have_rows('home_page') ) : the_row();
 
-            // get layout
+
             $layout = get_row_layout();
 
 
-            // layout_1
+
             if( $layout === 'first_section' ): ?>
 
                 <div class="section-1 py-5" style="background: url(<?php the_sub_field('background_image'); ?>) no-repeat center;  background-size: cover;">
@@ -38,7 +38,7 @@ Template Post Type: page
                             </div>
                         </div>
                         <div class="row justify-content-center my-4">
-                            <div class="col-11 col-md-6">
+                            <div class="col-11 col-md-6 pt-4">
                                 <h2 class="text-center text-white text-uppercase main-heading-font"><?php the_sub_field('heading'); ?></h2>
                             </div>
                         </div>
@@ -51,8 +51,36 @@ Template Post Type: page
                 </div>
 
 
+            <?php
+            elseif( $layout === 'second_section' ): ?>
 
-
+                <div class="section-2 py-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-11 col-md-6">
+                                <h4 class="text-center"><?php the_sub_field('heading'); ?></h4>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-11 col-md-7 my-3 text-center">
+                                <?php
+                                $link = get_sub_field('button_link');
+                                if ($link):
+                                    $link_url = $link['url'];
+                                    $link_title = $link['title'];
+                                    $link_target = $link['target'] ? $link['target'] : '_self';
+                                    ?>
+                                    <a class="button-blue p-2" href="<?php echo esc_url($link_url); ?>"
+                                       target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <h6 class="col-11 col-md-6 text-center"><?php the_sub_field('sub_heading'); ?></h6>
+                            <p class="col-11 col-md-7 text-center"><?php the_sub_field('text'); ?></p>
+                        </div>
+                    </div>
+                </div>
 
 
             <?php // layout_2
@@ -69,14 +97,6 @@ Template Post Type: page
     endif;
 
     ?>
-
-
-
-    <div class="section-1">
-        <div class="container">привет</div>
-    </div>
-
-
 
 
 
