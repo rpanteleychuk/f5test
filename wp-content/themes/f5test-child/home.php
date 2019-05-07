@@ -58,11 +58,11 @@ Template Post Type: page
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-11 col-md-6">
-                                <h4 class="text-center"><?php the_sub_field('heading'); ?></h4>
+                                <h4 class="text-center second-section-heading-font"><?php the_sub_field('heading'); ?></h4>
                             </div>
                         </div>
                         <div class="row justify-content-center">
-                            <div class="col-11 col-md-7 my-3 text-center">
+                            <div class="col-11 col-md-7 my-4 text-center">
                                 <?php
                                 $link = get_sub_field('button_link');
                                 if ($link):
@@ -70,14 +70,14 @@ Template Post Type: page
                                     $link_title = $link['title'];
                                     $link_target = $link['target'] ? $link['target'] : '_self';
                                     ?>
-                                    <a class="button-blue p-2" href="<?php echo esc_url($link_url); ?>"
+                                    <a class="button-blue px-3 py-1" href="<?php echo esc_url($link_url); ?>"
                                        target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
                                 <?php endif; ?>
                             </div>
                         </div>
-                        <div class="row justify-content-center">
-                            <h6 class="col-11 col-md-6 text-center"><?php the_sub_field('sub_heading'); ?></h6>
-                            <p class="col-11 col-md-7 text-center"><?php the_sub_field('text'); ?></p>
+                        <div class="row justify-content-center mt-3">
+                            <h6 class="col-11 col-md-6 text-center second-section-subheading-font mb-0"><?php the_sub_field('sub_heading'); ?></h6>
+                            <p class="col-11 col-md-9 text-center second-section-text-font"><?php the_sub_field('text'); ?></p>
                         </div>
                     </div>
                 </div>
