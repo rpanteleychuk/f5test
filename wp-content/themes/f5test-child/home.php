@@ -10,18 +10,18 @@ Template Post Type: page
 <div class="main-wrapper">
     <?php
 
-    if( have_rows('home_page') ):
+    if (have_rows('home_page')):
 
-        while( have_rows('home_page') ) : the_row();
+        while (have_rows('home_page')) : the_row();
 
 
             $layout = get_row_layout();
 
 
+            if ($layout === 'first_section'): ?>
 
-            if( $layout === 'first_section' ): ?>
-
-                <div class="section-1 py-5" style="background: url(<?php the_sub_field('background_image'); ?>) no-repeat center;  background-size: cover;">
+                <div class="section-1 py-5"
+                     style="background: url(<?php the_sub_field('background_image'); ?>) no-repeat center;  background-size: cover;">
                     <div class="container">
                         <div class="row justify-content-center my-5">
                             <div class="col head-logo text-center">
@@ -52,7 +52,7 @@ Template Post Type: page
 
 
             <?php
-            elseif( $layout === 'second_section' ): ?>
+            elseif ($layout === 'second_section'): ?>
 
                 <div class="section-2 py-5">
                     <div class="container">
@@ -84,9 +84,10 @@ Template Post Type: page
 
 
             <?php
-            elseif( $layout === 'third_section' ): ?>
+            elseif ($layout === 'third_section'): ?>
 
-                <div class="section-3 py-5" style="background: url(<?php the_sub_field('background_image'); ?>) no-repeat center;  background-size: cover;">
+                <div class="section-3 py-5"
+                     style="background: url(<?php the_sub_field('background_image'); ?>) no-repeat center;  background-size: cover;">
                     <div class="container">
                         <div class="row justify-content-center mb-5">
                             <div class="col">
@@ -161,20 +162,154 @@ Template Post Type: page
                 </div>
 
 
+            <?php
+            elseif ($layout === 'fourth_section'): ?>
+
+                <div class="section-4 py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h3 class="heading-font text-center text-uppercase heading-line"><?php the_sub_field('heading'); ?></h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h4><?php the_sub_field('first_article_header'); ?></h4>
+                            </div>
+                            <div class="col-6">
+                                <p><?php the_sub_field('first_article_paragraph_one'); ?></p>
+                                <p><?php the_sub_field('first_article_paragraph_two'); ?></p>
+                            </div>
+                            <div class="col-6">
+                                <?php
+
+                                $image = get_sub_field('first_article_image');
+
+                                if (!empty($image)): ?>
+
+                                    <img class="img-fluid" src="<?php echo $image['url']; ?>"
+                                         alt="<?php echo $image['alt']; ?>"/>
+
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h4><?php the_sub_field('second_article_header'); ?></h4>
+                            </div>
+                            <div class="col-6">
+                                <?php
+
+                                $image = get_sub_field('second_article_image');
+
+                                if (!empty($image)): ?>
+
+                                    <img class="img-fluid" src="<?php echo $image['url']; ?>"
+                                         alt="<?php echo $image['alt']; ?>"/>
+
+                                <?php endif; ?>
+                            </div>
+                            <div class="col-6">
+                                <p><?php the_sub_field('second_article_paragraph_one'); ?></p>
+                                <p><?php the_sub_field('second_second_article_paragraph_two'); ?></p>
+                                <p><?php the_sub_field('second_article_sub_header'); ?></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h4><?php the_sub_field('third_article_header'); ?></h4>
+                            </div>
+                            <div class="col-6">
+                                <p><?php the_sub_field('third_article_paragraph_one'); ?></p>
+                                <p><?php the_sub_field('third_article_sub_header'); ?></p>
+                                <p><?php the_sub_field('third_article_paragraph_two'); ?></p>
+                                <p><?php the_sub_field('third_article_paragraph_three'); ?></p>
+                            </div>
+                            <div class="col-6">
+                                <?php
+
+                                $image = get_sub_field('third_article_image');
+
+                                if (!empty($image)): ?>
+
+                                    <img class="img-fluid" src="<?php echo $image['url']; ?>"
+                                         alt="<?php echo $image['alt']; ?>"/>
+
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h4><?php the_sub_field('fourth_article_header'); ?></h4>
+                            </div>
+                            <div class="col-6">
+                                <?php
+
+                                $image = get_sub_field('fourth_article_image');
+
+                                if (!empty($image)): ?>
+
+                                    <img class="img-fluid" src="<?php echo $image['url']; ?>"
+                                         alt="<?php echo $image['alt']; ?>"/>
+
+                                <?php endif; ?>
+                            </div>
+                            <div class="col-6">
+                                <p><?php the_sub_field('fourth_article_sub_header'); ?></p>
+                                <p><?php the_sub_field('fourth_article_paragraph_one'); ?></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h4><?php the_sub_field('fifth_article_header'); ?></h4>
+                            </div>
+                            <div class="col-6">
+                                <p><?php the_sub_field('fifth_article_paragraph_one'); ?></p>
+                                <p><?php the_sub_field('fifth_article_paragraph_two'); ?></p>
+                                <div>
+                                    <?php if (have_rows('fifth_article_list')): ?>
+
+                                        <?php while (have_rows('fifth_article_list')): the_row();
+
+                                            // vars
+
+                                            $list = get_sub_field('list_item');
+
+                                            ?>
 
 
-            
+                                            <ul class="panel">
+                                                <li class="answer-font text-grey"><?php echo $list; ?></li>
+                                            </ul>
+                                        <?php endwhile; ?>
+                                    <?php endif; ?>
 
+                                </div>
+                                <p><?php the_sub_field('fifth_article_paragraph_three'); ?></p>
+                            </div>
+                            <div class="col-6">
+                                <?php
 
+                                $image = get_sub_field('fifth_article_image');
+
+                                if (!empty($image)): ?>
+
+                                    <img class="img-fluid" src="<?php echo $image['url']; ?>"
+                                         alt="<?php echo $image['alt']; ?>"/>
+
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
             <?php // layout_2
-            elseif( $layout === 'layout_2' ): ?>
+            elseif ($layout === 'layout_2'): ?>
 
                 <div class="section-2">
                     <p><?php the_sub_field('sub_field_2'); ?></p>
                 </div>
-
 
 
             <?php endif;
@@ -184,7 +319,6 @@ Template Post Type: page
     endif;
 
     ?>
-
 
 
 </div>
