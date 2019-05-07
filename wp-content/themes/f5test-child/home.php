@@ -21,9 +21,9 @@ Template Post Type: page
             // layout_1
             if( $layout === 'first_section' ): ?>
 
-                <div class="section-1" style="background: url(<?php the_sub_field('background_image'); ?>) no-repeat center;  background-size: cover;">
+                <div class="section-1 py-5" style="background: url(<?php the_sub_field('background_image'); ?>) no-repeat center;  background-size: cover;">
                     <div class="container">
-                        <div class="row justify-content-center">
+                        <div class="row justify-content-center my-5">
                             <div class="col-11 col-md-5 head-logo">
                                 <?php
 
@@ -37,14 +37,14 @@ Template Post Type: page
                                 <?php endif; ?>
                             </div>
                         </div>
-                        <div class="row justify-content-center">
-                            <div class="col-11 col-md-5">
-                                <h2 class="text-center text-white text-uppercase"><?php the_sub_field('heading'); ?></h2>
+                        <div class="row justify-content-center my-4">
+                            <div class="col-11 col-md-6">
+                                <h2 class="text-center text-white text-uppercase main-heading-font"><?php the_sub_field('heading'); ?></h2>
                             </div>
                         </div>
-                        <div class="row justify-content-center">
+                        <div class="row justify-content-center my-4">
                             <div class="col-11 col-md-7">
-                                <p class="text-white"><?php the_sub_field('main_text'); ?></p>
+                                <p class="text-white description-font"><?php the_sub_field('main_text'); ?></p>
                             </div>
                         </div>
                     </div>
