@@ -434,9 +434,16 @@ Template Post Type: page
                                 <h3 class="heading-font text-center text-uppercase heading-line"><?php the_sub_field('heading'); ?></h3>
                             </div>
                         </div>
-                        <div class="row justify-content-center">
+                        <div class="row justify-content-center mb-3">
                             <div class="col col-md-8">
                                 <h6 class="text-center"><?php the_sub_field('subheading'); ?></h6>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col col-md-5">
+                                <div class="form">
+                                    <?php echo do_shortcode('[contact-form-7 id="6" title="Contact form 1"]'); ?>
+                                </div>
                             </div>
                         </div>
                     </div>

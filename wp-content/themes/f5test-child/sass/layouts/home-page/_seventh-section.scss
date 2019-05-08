@@ -1,3 +1,40 @@
 .section-7 {
   background-color: #f8f8f8;
+  .form {
+    padding: 38px;
+    background-color: #fff;
+    .first-name-input,
+    .lastname-name-input,
+    .email-input,
+    .dropdown-input,
+    .message-input {
+      width: 100%;
+      border: 1px solid #d1d1d1;
+      font: 400 15px/20px "Quattrocento Sans", sans-serif;
+      color: #9b9b9b;
+      padding: 18px;
+      margin-bottom: 13px;
+    }
+    .acceptance {
+      font: 400 15px/20px "Quattrocento Sans", sans-serif;
+      color: #9b9b9b;
+    }
+    .submit-button {
+      margin-left: 37%;
+      background-color: #0092de;
+      color: #ffffff;
+      font: 400 15px/22px "Quattrocento Sans", sans-serif;
+      text-transform: uppercase;
+      border: 1px solid #0092de;
+      padding: 9px 20px;
+      &:hover {
+        background-color: #fff;
+        transition: 0.8s;
+        color: #0092de;
+        text-decoration: none;
+      }
+    }
+
+  }
+
 }
