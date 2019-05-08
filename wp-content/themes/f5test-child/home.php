@@ -316,7 +316,7 @@ Template Post Type: page
                                         <?php $posts = get_posts ("orderby=rand&category=4&numberposts=2"); ?>
                                         <?php if ($posts) : ?>
                                             <?php foreach ($posts as $post) : setup_postdata ($post); ?>
-                                                <div class="col-8 col-md-4 mt-3 mt-md-0">
+                                                <div class="col-12 col-md-4 mt-3 mt-md-0">
                                                     <div class="custom-post">
                                                         <div class="row">
                                                             <h6 class="col text-center"><span><?php the_title(); ?></span></h6>
@@ -340,7 +340,7 @@ Template Post Type: page
                                         <?php $posts = get_posts ("orderby=rand&category=4&numberposts=2"); ?>
                                         <?php if ($posts) : ?>
                                             <?php foreach ($posts as $post) : setup_postdata ($post); ?>
-                                                <div class="col-8 col-md-4 mt-3 mt-md-0">
+                                                <div class="col-12 col-md-4 mt-3 mt-md-0">
                                                     <div class="custom-post">
                                                         <div class="row">
                                                             <h6 class="col text-center"><span><?php the_title(); ?></span></h6>
@@ -364,7 +364,7 @@ Template Post Type: page
                                         <?php $posts = get_posts ("orderby=rand&category=4&numberposts=2"); ?>
                                         <?php if ($posts) : ?>
                                             <?php foreach ($posts as $post) : setup_postdata ($post); ?>
-                                                <div class="col-8 col-md-4 mt-3 mt-md-0">
+                                                <div class="col-12 col-md-4 mt-3 mt-md-0">
                                                     <div class="custom-post">
                                                         <div class="row">
                                                             <h6 class="col text-center"><span><?php the_title(); ?></span></h6>
@@ -401,7 +401,7 @@ Template Post Type: page
 
                 <div class="section-6 py-5">
                     <div class="container">
-                        <div class="row justify-content-center mb-3 mb-md-5">
+                        <div class="row justify-content-center mb-1 mb-md-3">
                             <div class="col">
                                 <h3 class="heading-font text-center text-uppercase heading-line"><?php the_sub_field('heading'); ?></h3>
                             </div>
@@ -410,7 +410,7 @@ Template Post Type: page
                             <?php $posts = get_posts ("category=5&numberposts=4"); ?>
                             <?php if ($posts) : ?>
                                 <?php foreach ($posts as $post) : setup_postdata ($post); ?>
-                                    <div class="col-12 col-sm-6 col-md-3">
+                                    <div class="col-12 col-sm-6 col-md-3 mt-3">
                                         <div class="custom-post text-center text-md-left">
                                             <a href="<?php echo get_permalink(); ?>"><?php the_content(); ?></a>
                                         </div>

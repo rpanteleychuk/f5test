@@ -1,3 +1,7 @@
+.heading-line {
+ overflow: hidden;
+}
+
 .heading-line::before,
 .heading-line::after {
   content: '';
