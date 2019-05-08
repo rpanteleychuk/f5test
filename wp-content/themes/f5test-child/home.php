@@ -20,7 +20,7 @@ Template Post Type: page
 
             if ($layout === 'first_section'): ?>
 
-                <div class="section-1 py-5"
+                <div id="welcome" class="section-1 py-5"
                      style="background: url(<?php the_sub_field('background_image'); ?>) no-repeat center;  background-size: cover;">
                     <div class="container">
                         <div class="row justify-content-center my-5">
@@ -86,7 +86,7 @@ Template Post Type: page
             <?php
             elseif ($layout === 'third_section'): ?>
 
-                <div class="section-3 py-5"
+                <div id="who-choose-us" class="section-3 py-5"
                      style="background: url(<?php the_sub_field('background_image'); ?>) no-repeat center;  background-size: cover;">
                     <div class="container">
                         <div class="row justify-content-center mb-3 mb-md-5">
@@ -165,7 +165,7 @@ Template Post Type: page
             <?php
             elseif ($layout === 'fourth_section'): ?>
 
-                <div class="section-4 py-5">
+                <div id="the-l-d-difference" class="section-4 py-5">
                     <div class="container">
                         <div class="row justify-content-center mb-3 mb-md-5">
                             <div class="col">
@@ -302,7 +302,7 @@ Template Post Type: page
             <?php
             elseif ($layout === 'fifth_section'): ?>
 
-                <div class="section-5 py-5" style="background: url(<?php the_sub_field('background_image'); ?>) no-repeat center;  background-size: cover;">
+                <div id="client-reviews" class="section-5 py-5" style="background: url(<?php the_sub_field('background_image'); ?>) no-repeat center;  background-size: cover;">
                     <div class="container-fluid">
                         <div class="row justify-content-center mb-3 mb-md-5">
                             <div class="col">
@@ -399,7 +399,7 @@ Template Post Type: page
             <?php
             elseif ($layout === 'sixth_section'): ?>
 
-                <div class="section-6 py-5">
+                <div id="lean-supply-chain" class="section-6 py-5">
                     <div class="container">
                         <div class="row justify-content-center mb-1 mb-md-3">
                             <div class="col">
@@ -427,7 +427,7 @@ Template Post Type: page
             <?php
             elseif ($layout === 'seventh_section'): ?>
 
-                <div class="section-7 py-5">
+                <div id="get-quote" class="section-7 py-5">
                     <div class="container">
                         <div class="row justify-content-center mb-1 mb-md-3">
                             <div class="col">

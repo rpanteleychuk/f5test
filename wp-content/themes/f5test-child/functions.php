@@ -13,6 +13,8 @@ add_action( 'wp_enqueue_scripts', 'f5test_child_styles');
 
 
 function f5test_child_scripts () {
+    wp_deregister_script( 'jquery' );
+
     wp_enqueue_script('jquery', get_stylesheet_directory_uri() . '/assets/js/jquery-3.4.1.min.js', '','',true);
 
     wp_enqueue_script('popper', get_stylesheet_directory_uri() . '/assets/js/popper.min.js', '','',true);

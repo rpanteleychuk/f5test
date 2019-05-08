@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400i,700,700i|Quattrocento:400,700" rel="stylesheet">
+    
     <?php wp_head(); ?>
 </head>
 
@@ -68,7 +69,7 @@
                     ) );
                     ?>
                 </nav><!-- #site-navigation -->
-                <a href="#" class="button-footer pt-3 d-none d-sm-none d-md-block">GET A QUOTE</a>
+                <a href="#get-quote" class="button-footer pt-3 d-none d-sm-none d-md-block">GET A QUOTE</a>
             </div>
         </div>
     </div>
