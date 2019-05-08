@@ -332,6 +332,7 @@ Template Post Type: page
                                                 </div>
                                             <?php endforeach; ?>
                                         <?php endif; ?>
+                                        <?php wp_reset_postdata(); ?>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
@@ -355,6 +356,7 @@ Template Post Type: page
                                                 </div>
                                             <?php endforeach; ?>
                                         <?php endif; ?>
+                                        <?php wp_reset_postdata(); ?>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
@@ -378,6 +380,7 @@ Template Post Type: page
                                                 </div>
                                             <?php endforeach; ?>
                                         <?php endif; ?>
+                                        <?php wp_reset_postdata(); ?>
                                     </div>
                                 </div>
                             </div>
@@ -393,10 +396,31 @@ Template Post Type: page
                     </div>
                 </div>
 
+            <?php
+            elseif ($layout === 'sixth_section'): ?>
 
-
-
-
+                <div class="section-6 py-5">
+                    <div class="container">
+                        <div class="row justify-content-center mb-3 mb-md-5">
+                            <div class="col">
+                                <h3 class="heading-font text-center text-uppercase heading-line"><?php the_sub_field('heading'); ?></h3>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <?php $posts = get_posts ("category=5&numberposts=4"); ?>
+                            <?php if ($posts) : ?>
+                                <?php foreach ($posts as $post) : setup_postdata ($post); ?>
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <div class="custom-post text-center text-md-left">
+                                            <a href="<?php echo get_permalink(); ?>"><?php the_content(); ?></a>
+                                        </div>
+                                    </div>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+                            <?php wp_reset_postdata(); ?>
+                        </div>
+                    </div>
+                </div>
 
 
 
