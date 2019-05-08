@@ -424,6 +424,26 @@ Template Post Type: page
 
 
 
+            <?php
+            elseif ($layout === 'seventh_section'): ?>
+
+                <div class="section-7 py-5">
+                    <div class="container">
+                        <div class="row justify-content-center mb-1 mb-md-3">
+                            <div class="col">
+                                <h3 class="heading-font text-center text-uppercase heading-line"><?php the_sub_field('heading'); ?></h3>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col col-md-8">
+                                <h6 class="text-center"><?php the_sub_field('subheading'); ?></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
 
 
             <?php // layout_2
