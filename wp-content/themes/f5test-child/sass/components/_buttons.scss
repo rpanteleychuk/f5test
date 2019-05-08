@@ -11,3 +11,17 @@
     text-decoration: none;
   }
 }
+
+.button-footer {
+  background-color: #0092de;
+  color: #ffffff;
+  font: 400 15px/22px "Quattrocento Sans", sans-serif;
+  border: 1px solid #0092de;
+  padding: 10px 27px;
+  &:hover {
+    background-color: #fff;
+    transition: 0.8s;
+    color: #0092de;
+    text-decoration: none;
+  }
+}
