@@ -27,7 +27,7 @@
 
 	<header id="masthead" class="site-header">
         <div class="container">
-            <div class="row py-3">
+            <div class="row pt-3">
                 <div class="col-12 col-md-6">
                     <div class="site-branding">
                         <?php
@@ -56,20 +56,19 @@
                 </div>
             </div>
         </div>
-
-
-
-		<nav id="site-navigation" class="main-navigation">
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
-
-
-
-	</header><!-- #masthead -->
-
+    </header><!-- #masthead -->
+    <div class="menu-container test" id="navbar">
+        <div class="container">
+            <div class="menu-container">
+                <nav id="site-navigation" class="main-navigation">
+                    <?php
+                    wp_nav_menu( array(
+                        'theme_location' => 'menu-1',
+                        'menu_id'        => 'primary-menu',
+                    ) );
+                    ?>
+                </nav><!-- #site-navigation -->
+            </div>
+        </div>
+    </div>
 	<div id="content" class="site-content">

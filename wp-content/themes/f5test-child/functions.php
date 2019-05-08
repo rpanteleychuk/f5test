@@ -25,6 +25,8 @@ function f5test_child_scripts () {
 add_action('wp_enqueue_scripts', 'f5test_child_scripts');
 
 
+show_admin_bar(false);
+
 
 
 
