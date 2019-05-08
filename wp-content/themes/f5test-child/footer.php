@@ -11,24 +11,61 @@
 
 ?>
 
-	</div><!-- #content -->
+	</div>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'f5test' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'f5test' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'f5test' ), 'f5test', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+            <?php
+
+            if( have_rows('home_page') ):
+
+                while( have_rows('home_page') ) : the_row();
+
+
+                    $layout = get_row_layout();
+
+
+
+                    if( $layout === 'footer' ): ?>
+
+                        <div class="footer-content">
+                            <div class="container-fluid">
+                                <div class="row justify-content-center">
+                                    <div class="col-6">
+                                        <p class="text-center"><?php the_sub_field('heading'); ?></p>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-6 text-center">
+                                        <?php
+                                        $link = get_sub_field('link');
+                                        if ($link):
+                                            $link_url = $link['url'];
+                                            $link_title = $link['title'];
+                                            $link_target = $link['target'] ? $link['target'] : '_self';
+                                            ?>
+                                            <a class="button-blue px-3 py-1" href="<?php echo esc_url($link_url); ?>"
+                                               target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-6">
+                                        <p class="text-center"><?php the_sub_field('copyright'); ?></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    <?php endif;
+
+                endwhile;
+
+            endif;
+
+            ?>
+	</footer>
+</div>
 
 <?php wp_footer(); ?>
 

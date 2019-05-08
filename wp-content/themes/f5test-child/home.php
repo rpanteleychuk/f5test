@@ -450,17 +450,6 @@ Template Post Type: page
                 </div>
 
 
-
-
-
-            <?php // layout_2
-            elseif ($layout === 'layout_2'): ?>
-
-                <div class="section-2">
-                    <p><?php the_sub_field('sub_field_2'); ?></p>
-                </div>
-
-
             <?php endif;
 
         endwhile;
