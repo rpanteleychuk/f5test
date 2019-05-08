@@ -48,10 +48,10 @@
                         <?php endif; ?>
                     </div><!-- .site-branding -->
                 </div>
-                <div class="col-6 col-md-3 link-tele">
+                <div class="col-12 col-md-3 link-tele">
                     <a href="tel:+1234567890"><i class="fas fa-phone"></i> Call Us<span>55 55 55 55</span></a>
                 </div>
-                <div class="col-6 col-md-3 link-mail">
+                <div class="col-12 col-md-3 link-mail">
                     <a href="mailto:sales@ldtool.com"><i class="fas fa-envelope"></i> Email Us<span>sales@ldtool.com</span></a>
                 </div>
             </div>
@@ -59,7 +59,7 @@
     </header><!-- #masthead -->
     <div class="menu-container test" id="navbar">
         <div class="container">
-            <div class="menu-container">
+            <div class="d-flex">
                 <nav id="site-navigation" class="main-navigation">
                     <?php
                     wp_nav_menu( array(
@@ -68,6 +68,7 @@
                     ) );
                     ?>
                 </nav><!-- #site-navigation -->
+                <a href="#" class="button-footer pt-3 d-none d-sm-none d-md-block">GET A QUOTE</a>
             </div>
         </div>
     </div>

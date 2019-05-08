@@ -1,0 +1,28 @@
+.menu-container {
+  background-color: #16242e;
+  position: sticky; /* Липкое позиционирование */
+  top: 0; /* Положение сверху */
+  z-index: 5;
+  .main-navigation {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style-type: none;
+      a {
+        font: 400 17px/22px "Quattrocento Sans", sans-serif;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        padding: 17px 20px 15px;
+        border-bottom: 2px solid #16242e;
+        &:hover {
+          color: #0092de;
+          border-bottom: 2px solid #0092de;
+        }
+      }
+    }
+  }
+}
