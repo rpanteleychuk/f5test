@@ -303,11 +303,86 @@ Template Post Type: page
             elseif ($layout === 'fifth_section'): ?>
 
                 <div class="section-5 py-5" style="background: url(<?php the_sub_field('background_image'); ?>) no-repeat center;  background-size: cover;">
-                    <div class="container">
+                    <div class="container-fluid">
                         <div class="row justify-content-center mb-3 mb-md-5">
                             <div class="col">
                                 <h3 class="heading-font text-white text-center text-uppercase heading-line"><?php the_sub_field('heading'); ?></h3>
                             </div>
+                        </div>
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row justify-content-center">
+                                        <?php $posts = get_posts ("orderby=rand&category=4&numberposts=2"); ?>
+                                        <?php if ($posts) : ?>
+                                            <?php foreach ($posts as $post) : setup_postdata ($post); ?>
+                                                <div class="col-8 col-md-4 mt-3 mt-md-0">
+                                                    <div class="custom-post">
+                                                        <div class="row">
+                                                            <p class="col"><?php the_title(); ?></p>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <p><?php the_content(); ?></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <?php endforeach; ?>
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row justify-content-center">
+                                        <?php $posts = get_posts ("orderby=rand&category=4&numberposts=2"); ?>
+                                        <?php if ($posts) : ?>
+                                            <?php foreach ($posts as $post) : setup_postdata ($post); ?>
+                                                <div class="col-8 col-md-4 mt-3 mt-md-0">
+                                                    <div class="custom-post">
+                                                        <div class="row">
+                                                            <p class="col"><?php the_title(); ?></p>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <p><?php the_content(); ?></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <?php endforeach; ?>
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row justify-content-center">
+                                        <?php $posts = get_posts ("orderby=rand&category=4&numberposts=2"); ?>
+                                        <?php if ($posts) : ?>
+                                            <?php foreach ($posts as $post) : setup_postdata ($post); ?>
+                                                <div class="col-8 col-md-4 mt-3 mt-md-0">
+                                                    <div class="custom-post">
+                                                        <div class="row">
+                                                            <p class="col"><?php the_title(); ?></p>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <p><?php the_content(); ?></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <?php endforeach; ?>
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
                     </div>
                 </div>
