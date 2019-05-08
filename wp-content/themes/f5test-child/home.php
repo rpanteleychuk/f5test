@@ -89,12 +89,12 @@ Template Post Type: page
                 <div class="section-3 py-5"
                      style="background: url(<?php the_sub_field('background_image'); ?>) no-repeat center;  background-size: cover;">
                     <div class="container">
-                        <div class="row justify-content-center mb-5">
+                        <div class="row justify-content-center mb-3 mb-md-5">
                             <div class="col">
                                 <h3 class="heading-font text-white text-center text-uppercase heading-line"><?php the_sub_field('heading'); ?></h3>
                             </div>
                         </div>
-                        <div class="row justify-content-center mb-4">
+                        <div class="row justify-content-center">
                             <div class="col col-md-7">
                                 <p class="text-white text-center third-section-subheading-font"><?php the_sub_field('sub_heading'); ?></p>
                             </div>
@@ -167,13 +167,13 @@ Template Post Type: page
 
                 <div class="section-4 py-5">
                     <div class="container">
-                        <div class="row my-4">
+                        <div class="row justify-content-center mb-3 mb-md-5">
                             <div class="col">
                                 <h3 class="heading-font text-center text-uppercase heading-line"><?php the_sub_field('heading'); ?></h3>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12 pt-5 pb-3">
+                            <div class="col-12 pt-3 pb-3">
                                 <h4><span><?php the_sub_field('first_article_header'); ?></span></h4>
                             </div>
                             <div class="col-12 col-md-6 text-justify">
@@ -298,6 +298,27 @@ Template Post Type: page
                         </div>
                     </div>
                 </div>
+
+            <?php
+            elseif ($layout === 'fifth_section'): ?>
+
+                <div class="section-5 py-5" style="background: url(<?php the_sub_field('background_image'); ?>) no-repeat center;  background-size: cover;">
+                    <div class="container">
+                        <div class="row justify-content-center mb-3 mb-md-5">
+                            <div class="col">
+                                <h3 class="heading-font text-white text-center text-uppercase heading-line"><?php the_sub_field('heading'); ?></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
 
 
             <?php // layout_2
