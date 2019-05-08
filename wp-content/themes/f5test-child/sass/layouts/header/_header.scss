@@ -1,0 +1,35 @@
+header {
+  .link-tele {
+    font: 700 15px/22px "Roboto", sans-serif;
+    color: #0092de;
+    padding-top: 11px;
+    a:hover {
+      transition: 0.8s;
+      color: red;
+      text-decoration: none;
+    }
+    span {
+      color: #000;
+      margin-left: 5px;
+      padding-left: 5px;
+      border-left: 1px solid #d0d3d5;
+    }
+
+  }
+  .link-mail {
+    font: 700 15px/22px "Roboto", sans-serif;
+    color: #0092de;
+    padding-top: 11px;
+    a:hover {
+      transition: 0.8s;
+      color: red;
+      text-decoration: none;
+    }
+    span {
+      color: #000;
+      margin-left: 5px;
+      padding-left: 5px;
+      border-left: 1px solid #d0d3d5;
+    }
+  }
+}
