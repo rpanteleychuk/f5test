@@ -2,5 +2,26 @@
   .custom-post {
     background-color: #fff;
     min-height: 100%;
+    padding: 60px 40px;
+    h6 {
+      font: 700 18px/20px "Quattrocento Sans", sans-serif;
+      color: #474747;
+      span {
+        border-bottom: 2px solid #0092de;
+      }
+    }
+    p {
+      font: 400 15px/20px "Quattrocento Sans", sans-serif;
+      font-style: italic;
+      margin: 0;
+      padding: 0 20px;
+    }
+    .wp-block-quote {
+      margin: 0;
+    }
+    .fa-quote-right {
+      color: #ccc;
+    }
   }
+
 }

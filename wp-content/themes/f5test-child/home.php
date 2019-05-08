@@ -319,13 +319,15 @@ Template Post Type: page
                                                 <div class="col-8 col-md-4 mt-3 mt-md-0">
                                                     <div class="custom-post">
                                                         <div class="row">
-                                                            <p class="col"><?php the_title(); ?></p>
+                                                            <h6 class="col text-center"><span><?php the_title(); ?></span></h6>
                                                         </div>
+                                                        <div class="fas fa-quote-right fa-2x"></div>
                                                         <div class="row">
                                                             <div class="col">
-                                                                <p><?php the_content(); ?></p>
+                                                                <div class="text-center"><?php the_content(); ?></div>
                                                             </div>
                                                         </div>
+                                                        <div class="fas fa-quote-right fa-2x fa-pull-right"></div>
                                                     </div>
                                                 </div>
                                             <?php endforeach; ?>
@@ -340,13 +342,15 @@ Template Post Type: page
                                                 <div class="col-8 col-md-4 mt-3 mt-md-0">
                                                     <div class="custom-post">
                                                         <div class="row">
-                                                            <p class="col"><?php the_title(); ?></p>
+                                                            <h6 class="col text-center"><span><?php the_title(); ?></span></h6>
                                                         </div>
+                                                        <div class="fas fa-quote-right fa-2x"></div>
                                                         <div class="row">
                                                             <div class="col">
-                                                                <p><?php the_content(); ?></p>
+                                                                <div class="text-center"><?php the_content(); ?></div>
                                                             </div>
                                                         </div>
+                                                        <div class="fas fa-quote-right fa-2x fa-pull-right"></div>
                                                     </div>
                                                 </div>
                                             <?php endforeach; ?>
@@ -361,13 +365,15 @@ Template Post Type: page
                                                 <div class="col-8 col-md-4 mt-3 mt-md-0">
                                                     <div class="custom-post">
                                                         <div class="row">
-                                                            <p class="col"><?php the_title(); ?></p>
+                                                            <h6 class="col text-center"><span><?php the_title(); ?></span></h6>
                                                         </div>
+                                                        <div class="fas fa-quote-right fa-2x"></div>
                                                         <div class="row">
                                                             <div class="col">
-                                                                <p><?php the_content(); ?></p>
+                                                                <div class="text-center"><?php the_content(); ?></div>
                                                             </div>
                                                         </div>
+                                                        <div class="fas fa-quote-right fa-2x fa-pull-right"></div>
                                                     </div>
                                                 </div>
                                             <?php endforeach; ?>
