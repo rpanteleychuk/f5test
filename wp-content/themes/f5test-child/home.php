@@ -440,7 +440,7 @@ Template Post Type: page
                             </div>
                         </div>
                         <div class="row justify-content-center">
-                            <div class="col col-md-5">
+                            <div class="col col-md-8 col-lg-5">
                                 <div class="form">
                                     <?php echo do_shortcode('[contact-form-7 id="6" title="Contact form 1"]'); ?>
                                 </div>
