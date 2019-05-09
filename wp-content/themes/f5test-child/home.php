@@ -410,8 +410,8 @@ Template Post Type: page
                             <?php $posts = get_posts ("category=5&numberposts=4"); ?>
                             <?php if ($posts) : ?>
                                 <?php foreach ($posts as $post) : setup_postdata ($post); ?>
-                                    <div class="col-12 col-sm-6 col-md-3 mt-3">
-                                        <div class="custom-post text-center text-md-left">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3">
+                                        <div class="custom-post text-center text-lg-left">
                                             <a href="<?php echo get_permalink(); ?>"><?php the_content(); ?></a>
                                         </div>
                                     </div>
