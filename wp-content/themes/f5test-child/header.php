@@ -31,7 +31,7 @@
     <header id="masthead" class="site-header">
         <div class="container">
             <div class="row pt-3">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-4 col-lg-6">
                     <div class="site-branding">
                         <?php
                         the_custom_logo();
@@ -53,17 +53,18 @@
                         <?php endif; ?>
                     </div><!-- .site-branding -->
                 </div>
-                <div class="col-12 col-md-3 link-tele">
+                <div class="col-12 col-md-4 col-lg-3 link-tele">
                     <a href="tel:+1234567890"><i class="fas fa-phone"></i> Call Us<span>55 55 55 55</span></a>
                 </div>
-                <div class="col-12 col-md-3 link-mail">
+                <div class="col-12 col-md-4 col-lg-3 link-mail">
                     <a href="mailto:sales@ldtool.com"><i class="fas fa-envelope"></i> Email
                         Us<span>sales@ldtool.com</span></a>
                 </div>
             </div>
         </div>
-    </header><!-- #masthead -->
-    <div class="menu-container" id="navbar">
+    </header>
+
+    <div class="menu-container d-none d-sm-none d-md-none d-lg-block" id="navbar">
         <div class="container">
             <div class="d-flex">
                 <nav id="site-navigation" class="main-navigation">
@@ -73,10 +74,16 @@
                         'menu_id' => 'primary-menu',
                     ));
                     ?>
-                </nav><!-- #site-navigation -->
-                <a href="#get-quote" class="button-footer pt-3 d-none d-sm-none d-md-block">GET A QUOTE</a>
+                </nav>
+                <a href="#get-quote" class="button-footer pt-3">GET A QUOTE</a>
             </div>
         </div>
     </div>
+
+
+
+
+
+
 
     <div id="content" class="site-content">

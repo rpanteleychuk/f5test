@@ -35,7 +35,7 @@
                                     </div>
                                 </div>
                                 <div class="row justify-content-center">
-                                    <div class="col-6 text-center">
+                                    <div class="col-8 text-center">
                                         <?php
                                         $link = get_sub_field('link');
                                         if ($link):
