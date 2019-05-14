@@ -64,26 +64,25 @@
         </div>
     </header>
 
-    <div class="menu-container d-none d-sm-none d-md-none d-lg-block" id="navbar">
+
+<div class="menu-container sticky-top">
+    <nav class="navbar navbar-expand-sm p-0 navbar-dark">
         <div class="container">
-            <div class="d-flex">
-                <nav id="site-navigation" class="main-navigation">
-                    <?php
-                    wp_nav_menu(array(
-                        'theme_location' => 'menu-1',
-                        'menu_id' => 'primary-menu',
-                    ));
-                    ?>
-                </nav>
-                <a href="#get-quote" class="button-footer pt-3">GET A QUOTE</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse main-navigation" id="navbarNav">
+                <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'menu-1',
+                    'menu_id' => 'primary-menu',
+                ));
+                ?>
             </div>
+            <a href="#get-quote" class="button-footer p-3">GET A QUOTE</a>
         </div>
-    </div>
-
-
-
-
-
+    </nav>
+</div>
 
 
     <div id="content" class="site-content">

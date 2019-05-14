@@ -1,16 +1,29 @@
 .menu-container {
   background-color: #16242e;
-  position: sticky; /* Липкое позиционирование */
-  top: 0; /* Положение сверху */
   z-index: 5;
+  .navbar-toggler {
+    border: none;
+  }
+  .navbar-toggler-icon {
+    padding-bottom: 21px;
+    padding-top: 21px;
+  }
+  .button-footer {
+    display: block;
+  }
   .main-navigation {
     ul {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
       padding-left: 0;
       margin-bottom: 0;
       list-style-type: none;
+      li {
+        display: inline-block;
+        }
+      @media (max-width: 767.98px) {
+        li {
+          display: block;
+        }
+      }
       a {
         font: 400 17px/22px "Quattrocento Sans", sans-serif;
         color: #fff;
@@ -26,3 +39,5 @@
     }
   }
 }
+
+
