@@ -1,9 +1,12 @@
-.footer-content {
-  background-color: #16242e;
-  .footer-head-text {
+.site-footer {
+  &__wrapper {
+    background-color: #16242e;
+  }
+  &__heading {
     font: 400 18px/21px "Quattrocento Sans", sans-serif;
   }
-  .copyright-text {
+  &__copyright {
     font: 400 12px/25px "Quattrocento Sans", sans-serif;
   }
 }
+

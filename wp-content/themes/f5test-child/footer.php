@@ -27,11 +27,11 @@
 
                     if( $layout === 'footer' ): ?>
 
-                        <div class="footer-content pt-4 pb-2">
+                        <div class="site-footer__wrapper pt-4 pb-2">
                             <div class="container-fluid">
                                 <div class="row justify-content-center mb-3">
                                     <div class="col-6">
-                                        <p class="footer-head-text text-center text-white"><?php the_sub_field('heading'); ?></p>
+                                        <p class="site-footer__heading text-center text-white"><?php the_sub_field('heading'); ?></p>
                                     </div>
                                 </div>
                                 <div class="row justify-content-center">
@@ -43,14 +43,14 @@
                                             $link_title = $link['title'];
                                             $link_target = $link['target'] ? $link['target'] : '_self';
                                             ?>
-                                            <a class="button-footer" href="<?php echo esc_url($link_url); ?>"
+                                            <a class="site-footer__button" href="<?php echo esc_url($link_url); ?>"
                                                target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
                                         <?php endif; ?>
                                     </div>
                                 </div>
                                 <div class="row mt-3 mt-md-5 pt-2 footer-line justify-content-center">
                                     <div class="col-6">
-                                        <p class="copyright-text text-center text-white"><?php the_sub_field('copyright'); ?></p>
+                                        <p class="site-footer__copyright text-center text-white"><?php the_sub_field('copyright'); ?></p>
                                     </div>
                                 </div>
                             </div>
