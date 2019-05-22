@@ -165,14 +165,14 @@ Template Post Type: page
             <?php
             elseif ($layout === 'fourth_section'): ?>
 
-                <div id="the-l-d-difference" class="section-4 py-5">
+                <div id="the-l-d-difference" class="section-four py-5">
                     <div class="container">
                         <div class="row justify-content-center mb-3 mb-md-5">
                             <div class="col">
-                                <h3 class="heading-font text-center text-uppercase heading-line"><?php the_sub_field('heading'); ?></h3>
+                                <h3 class="section-four__heading text-center text-uppercase heading-line"><?php the_sub_field('heading'); ?></h3>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row section-four__item">
                             <div class="col-12 pt-3 pb-3">
                                 <h4><span><?php the_sub_field('first_article_header'); ?></span></h4>
                             </div>
@@ -193,7 +193,7 @@ Template Post Type: page
                                 <?php endif; ?>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row section-four__item">
                             <div class="col-12 pt-5 pb-3">
                                 <h4><span><?php the_sub_field('second_article_header'); ?></span></h4>
                             </div>
@@ -215,7 +215,7 @@ Template Post Type: page
                                 <p class="text-bold"><?php the_sub_field('second_article_sub_header'); ?></p>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row section-four__item">
                             <div class="col-12 pt-5 pb-3">
                                 <h4><span><?php the_sub_field('third_article_header'); ?></span></h4>
                             </div>
@@ -238,7 +238,7 @@ Template Post Type: page
                                 <?php endif; ?>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row section-four__item">
                             <div class="col-12 pt-5 pb-3">
                                 <h4><span><?php the_sub_field('fourth_article_header'); ?></span></h4>
                             </div>
@@ -259,7 +259,7 @@ Template Post Type: page
                                 <p><?php the_sub_field('fourth_article_paragraph_one'); ?></p>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row section-four__item">
                             <div class="col-12 pt-5 pb-3">
                                 <h4><span><?php the_sub_field('fifth_article_header'); ?></span></h4>
                             </div>

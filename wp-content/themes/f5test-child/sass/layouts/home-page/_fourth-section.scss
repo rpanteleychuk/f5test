@@ -1,32 +1,37 @@
-.section-4 {
-  h4 {
-    padding-bottom: 19px;
-    border-bottom: 1px solid #ededed;
-    font: 700 27px/20px "Quattrocento", serif;
-    text-transform: uppercase;
-    span {
-      border-bottom: 2px solid #0092de;
-      padding-bottom: 13px;
-    }
+.section-four {
+  &__heading {
+    font: 700 35px/28px "Quattrocento", serif;
   }
-  p, ul, li {
-    font: 400 18px/21px "Quattrocento Sans", sans-serif;
-    color: #474747;
-  }
-  .text-bold {
-    font: 700 18px/21px "Quattrocento Sans", sans-serif;
-    color: #474747;
-  }
-  @media (max-width: 575.98px) {
+  &__item {
     h4 {
-      font: 700 15px/20px "Quattrocento", serif;
-      padding-bottom: 12px;
+      padding-bottom: 19px;
+      border-bottom: 1px solid #ededed;
+      font: 700 27px/20px "Quattrocento", serif;
+      text-transform: uppercase;
+      span {
+        border-bottom: 2px solid #0092de;
+        padding-bottom: 13px;
+      }
     }
-    p, li {
-      font: 400 13px/21px "Quattrocento Sans", sans-serif;
+    p, ul, li {
+      font: 400 18px/21px "Quattrocento Sans", sans-serif;
+      color: #474747;
     }
     .text-bold {
-      font: 700 13px/21px "Quattrocento Sans", sans-serif;
+      font: 700 18px/21px "Quattrocento Sans", sans-serif;
+      color: #474747;
+    }
+    @media (max-width: 575.98px) {
+      h4 {
+        font: 700 15px/20px "Quattrocento", serif;
+        padding-bottom: 12px;
+      }
+      p, li {
+        font: 400 13px/21px "Quattrocento Sans", sans-serif;
+      }
+      .text-bold {
+        font: 700 13px/21px "Quattrocento Sans", sans-serif;
+      }
     }
   }
 }
