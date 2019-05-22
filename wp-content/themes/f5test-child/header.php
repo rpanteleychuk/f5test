@@ -53,10 +53,10 @@
                         <?php endif; ?>
                     </div><!-- .site-branding -->
                 </div>
-                <div class="col-12 col-md-4 col-lg-3 link-tele">
+                <div class="col-12 col-md-4 col-lg-3 header__phone-contact-style">
                     <a href="tel:+1234567890"><i class="fas fa-phone"></i> Call Us<span>55 55 55 55</span></a>
                 </div>
-                <div class="col-12 col-md-4 col-lg-3 link-mail">
+                <div class="col-12 col-md-4 col-lg-3 header__mail-contact-style">
                     <a href="mailto:sales@ldtool.com"><i class="fas fa-envelope"></i> Email
                         Us<span>sales@ldtool.com</span></a>
                 </div>
