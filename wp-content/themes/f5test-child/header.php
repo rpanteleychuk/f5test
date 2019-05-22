@@ -65,13 +65,13 @@
     </header>
 
 
-<div class="menu-container sticky-top">
-    <nav class="navbar navbar-expand-sm p-0 navbar-dark">
+<div class="header-menu sticky-top">
+    <nav class="navbar navbar-expand-lg p-0 navbar-dark">
         <div class="container">
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+            <button class="header-menu__navbar-toggler navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="header-menu__navbar-toggler-icon navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse main-navigation" id="navbarNav">
+            <div class="collapse navbar-collapse header-menu__main-navigation-style" id="navbarNav">
                 <?php
                 wp_nav_menu(array(
                     'theme_location' => 'menu-1',
@@ -79,7 +79,7 @@
                 ));
                 ?>
             </div>
-            <a href="#get-quote" class="button-footer p-3">GET A QUOTE</a>
+            <a href="#get-quote" class="header-menu__button p-3">GET A QUOTE</a>
         </div>
     </nav>
 </div>

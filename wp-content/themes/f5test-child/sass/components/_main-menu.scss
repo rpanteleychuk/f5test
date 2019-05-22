@@ -1,17 +1,14 @@
-.menu-container {
+.header-menu {
   background-color: #16242e;
   z-index: 5;
-  .navbar-toggler {
+  &__navbar-toggler {
     border: none;
   }
-  .navbar-toggler-icon {
+  &__navbar-toggler-icon {
     padding-bottom: 24px;
     padding-top: 24px;
   }
-  .button-footer {
-    display: block;
-  }
-  .main-navigation {
+  &__main-navigation-style {
     ul {
       padding-left: 0;
       margin-bottom: 0;
