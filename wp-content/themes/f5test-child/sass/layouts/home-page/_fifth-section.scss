@@ -3,6 +3,11 @@
   &__heading {
     font: 700 35px/28px "Quattrocento", serif;
   }
+  @media (max-width: 767.98px) {
+    &__heading {
+      font: 700 18px/20px "Quattrocento", serif;
+    }
+  }
   &__custom-post {
     background-color: #fff;
     min-height: 100%;
