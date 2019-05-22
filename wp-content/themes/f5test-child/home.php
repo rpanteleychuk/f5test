@@ -86,12 +86,12 @@ Template Post Type: page
             <?php
             elseif ($layout === 'third_section'): ?>
 
-                <div id="who-choose-us" class="section-3 py-5"
+                <div id="who-choose-us" class="section-three py-5"
                      style="background: url(<?php the_sub_field('background_image'); ?>) no-repeat center;  background-size: cover;">
                     <div class="container">
                         <div class="row justify-content-center mb-3 mb-md-5">
                             <div class="col">
-                                <h3 class="heading-font text-white text-center text-uppercase heading-line"><?php the_sub_field('heading'); ?></h3>
+                                <h3 class="section-three__heading text-white text-center text-uppercase heading-line"><?php the_sub_field('heading'); ?></h3>
                             </div>
                         </div>
                         <div class="row justify-content-center">
@@ -101,8 +101,8 @@ Template Post Type: page
                         </div>
                         <div class="row">
                             <div class="col-md-12 col-lg-4 my-2">
-                                <div class="third-section-item">
-                                    <div class="min-height">
+                                <div class="section-three__item">
+                                    <div>
                                         <?php
 
                                         $image = get_sub_field('first_image');
@@ -113,15 +113,15 @@ Template Post Type: page
                                                  alt="<?php echo $image['alt']; ?>"/>
 
                                         <?php endif; ?>
-                                        <h6 class="d-inline text-uppercase"><?php the_sub_field('first_item_heading'); ?></h6>
+                                        <h6 class="d-inline section-three__item-heading text-uppercase"><?php the_sub_field('first_item_heading'); ?></h6>
                                     </div>
-                                    <p class="text-box text-justify"><?php the_sub_field('first_item_text'); ?></p>
-                                    <p class="sub-text-box text-justify"><?php the_sub_field('first_item_subtext'); ?></p>
+                                    <p class="section-three__item-text text-justify"><?php the_sub_field('first_item_text'); ?></p>
+                                    <p class="section-three__item-sub-text text-justify"><?php the_sub_field('first_item_subtext'); ?></p>
                                 </div>
                             </div>
                             <div class="col-md-12 col-lg-4 my-2">
-                                <div class="third-section-item">
-                                    <div class="min-height">
+                                <div class="section-three__item">
+                                    <div>
                                         <?php
 
                                         $image = get_sub_field('second_image');
@@ -132,15 +132,15 @@ Template Post Type: page
                                                  alt="<?php echo $image['alt']; ?>"/>
 
                                         <?php endif; ?>
-                                        <h6 class="d-inline text-uppercase"><?php the_sub_field('second_item_heading'); ?></h6>
+                                        <h6 class="d-inline section-three__item-heading text-uppercase"><?php the_sub_field('second_item_heading'); ?></h6>
                                     </div>
-                                    <p class="text-box text-justify"><?php the_sub_field('second_item_text'); ?></p>
-                                    <p class="sub-text-box text-justify"><?php the_sub_field('second_item_subtext'); ?></p>
+                                    <p class="section-three__item-text text-justify"><?php the_sub_field('second_item_text'); ?></p>
+                                    <p class="section-three__item-sub-text text-justify"><?php the_sub_field('second_item_subtext'); ?></p>
                                 </div>
                             </div>
                             <div class="col-md-12 col-lg-4 my-2">
-                                <div class="third-section-item">
-                                    <div class="min-height">
+                                <div class="section-three__item">
+                                    <div>
                                         <?php
 
                                         $image = get_sub_field('third_image');
@@ -151,10 +151,10 @@ Template Post Type: page
                                                  alt="<?php echo $image['alt']; ?>"/>
 
                                         <?php endif; ?>
-                                        <h6 class="d-inline text-uppercase"><?php the_sub_field('third_item_heading'); ?></h6>
+                                        <h6 class="d-inline section-three__item-heading text-uppercase"><?php the_sub_field('third_item_heading'); ?></h6>
                                     </div>
-                                    <p class="text-box text-justify"><?php the_sub_field('third_item_text'); ?></p>
-                                    <p class="sub-text-box text-justify"><?php the_sub_field('third_item_subtext'); ?></p>
+                                    <p class="section-three__item-text text-justify"><?php the_sub_field('third_item_text'); ?></p>
+                                    <p class="section-three__item-sub-text text-justify"><?php the_sub_field('third_item_subtext'); ?></p>
                                 </div>
                             </div>
                         </div>
