@@ -399,11 +399,11 @@ Template Post Type: page
             <?php
             elseif ($layout === 'sixth_section'): ?>
 
-                <div id="lean-supply-chain" class="section-6 py-5">
+                <div id="lean-supply-chain" class="section-six py-5">
                     <div class="container">
                         <div class="row justify-content-center mb-1 mb-md-3">
                             <div class="col">
-                                <h3 class="heading-font text-center text-uppercase heading-line"><?php the_sub_field('heading'); ?></h3>
+                                <h3 class="section-six__heading text-center text-uppercase heading-line"><?php the_sub_field('heading'); ?></h3>
                             </div>
                         </div>
                         <div class="row justify-content-center">
@@ -411,7 +411,7 @@ Template Post Type: page
                             <?php if ($posts) : ?>
                                 <?php foreach ($posts as $post) : setup_postdata ($post); ?>
                                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-3">
-                                        <div class="custom-post text-center text-lg-left">
+                                        <div class="section-six__custom-post text-center text-lg-left">
                                             <a href="<?php echo get_permalink(); ?>"><?php the_content(); ?></a>
                                         </div>
                                     </div>
@@ -421,7 +421,6 @@ Template Post Type: page
                         </div>
                     </div>
                 </div>
-
 
 
             <?php

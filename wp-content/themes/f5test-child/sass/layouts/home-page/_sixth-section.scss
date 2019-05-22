@@ -1,5 +1,8 @@
-.section-6 {
-  .custom-post {
+.section-six {
+  &__heading {
+    font: 700 35px/28px "Quattrocento", serif;
+  }
+  &__custom-post {
     min-height: 100%;
     border: 1px solid #ededed;
     &:hover {
