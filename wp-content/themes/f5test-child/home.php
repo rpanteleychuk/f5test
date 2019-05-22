@@ -302,11 +302,11 @@ Template Post Type: page
             <?php
             elseif ($layout === 'fifth_section'): ?>
 
-                <div id="client-reviews" class="section-5 py-5" style="background: url(<?php the_sub_field('background_image'); ?>) no-repeat center;  background-size: cover;">
+                <div id="client-reviews" class="section-five py-5" style="background: url(<?php the_sub_field('background_image'); ?>) no-repeat center;  background-size: cover;">
                     <div class="container-fluid">
                         <div class="row justify-content-center mb-3 mb-md-5">
                             <div class="col">
-                                <h3 class="heading-font text-white text-center text-uppercase heading-line"><?php the_sub_field('heading'); ?></h3>
+                                <h3 class="section-five__heading text-white text-center text-uppercase heading-line"><?php the_sub_field('heading'); ?></h3>
                             </div>
                         </div>
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -317,7 +317,7 @@ Template Post Type: page
                                         <?php if ($posts) : ?>
                                             <?php foreach ($posts as $post) : setup_postdata ($post); ?>
                                                 <div class="col-12 col-md-4 mt-3 mt-md-0">
-                                                    <div class="custom-post">
+                                                    <div class="section-five__custom-post">
                                                         <div class="row">
                                                             <h6 class="col text-center"><span><?php the_title(); ?></span></h6>
                                                         </div>
@@ -341,7 +341,7 @@ Template Post Type: page
                                         <?php if ($posts) : ?>
                                             <?php foreach ($posts as $post) : setup_postdata ($post); ?>
                                                 <div class="col-12 col-md-4 mt-3 mt-md-0">
-                                                    <div class="custom-post">
+                                                    <div class="section-five__custom-post">
                                                         <div class="row">
                                                             <h6 class="col text-center"><span><?php the_title(); ?></span></h6>
                                                         </div>
@@ -365,7 +365,7 @@ Template Post Type: page
                                         <?php if ($posts) : ?>
                                             <?php foreach ($posts as $post) : setup_postdata ($post); ?>
                                                 <div class="col-12 col-md-4 mt-3 mt-md-0">
-                                                    <div class="custom-post">
+                                                    <div class="section-five__custom-post">
                                                         <div class="row">
                                                             <h6 class="col text-center"><span><?php the_title(); ?></span></h6>
                                                         </div>

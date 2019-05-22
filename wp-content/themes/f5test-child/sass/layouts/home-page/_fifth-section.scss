@@ -1,6 +1,9 @@
-.section-5 {
+.section-five {
   min-height: 525px;
-  .custom-post {
+  &__heading {
+    font: 700 35px/28px "Quattrocento", serif;
+  }
+  &__custom-post {
     background-color: #fff;
     min-height: 100%;
     padding: 60px 40px;
