@@ -1,6 +1,9 @@
-.section-7 {
+.section-seven {
   background-color: #f8f8f8;
-  .form {
+  &__heading {
+    font: 700 35px/28px "Quattrocento", serif;
+  }
+  &__form {
     padding: 38px;
     background-color: #fff;
     .first-name-input,
@@ -34,7 +37,5 @@
         text-decoration: none;
       }
     }
-
   }
-
 }

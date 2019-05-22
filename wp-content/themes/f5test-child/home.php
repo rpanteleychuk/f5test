@@ -426,11 +426,11 @@ Template Post Type: page
             <?php
             elseif ($layout === 'seventh_section'): ?>
 
-                <div id="get-quote" class="section-7 py-5">
+                <div id="get-quote" class="section-seven py-5">
                     <div class="container">
                         <div class="row justify-content-center mb-1 mb-md-3">
                             <div class="col">
-                                <h3 class="heading-font text-center text-uppercase heading-line"><?php the_sub_field('heading'); ?></h3>
+                                <h3 class="section-seven__heading text-center text-uppercase heading-line"><?php the_sub_field('heading'); ?></h3>
                             </div>
                         </div>
                         <div class="row justify-content-center mb-3">
@@ -440,7 +440,7 @@ Template Post Type: page
                         </div>
                         <div class="row justify-content-center">
                             <div class="col col-md-8 col-lg-5">
-                                <div class="form">
+                                <div class="section-seven__form">
                                     <?php echo do_shortcode('[contact-form-7 id="6" title="Contact form 1"]'); ?>
                                 </div>
                             </div>
