@@ -54,11 +54,11 @@ Template Post Type: page
             <?php
             elseif ($layout === 'second_section'): ?>
 
-                <div class="section-2 py-5">
+                <div class="section-two py-5">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col">
-                                <h4 class="text-center second-section-heading-font"><?php the_sub_field('heading'); ?></h4>
+                                <h4 class="text-center section-two__heading"><?php the_sub_field('heading'); ?></h4>
                             </div>
                         </div>
                         <div class="row justify-content-center">
@@ -70,14 +70,14 @@ Template Post Type: page
                                     $link_title = $link['title'];
                                     $link_target = $link['target'] ? $link['target'] : '_self';
                                     ?>
-                                    <a class="button-blue px-3 py-1" href="<?php echo esc_url($link_url); ?>"
+                                    <a class="section-two__button px-3 py-1" href="<?php echo esc_url($link_url); ?>"
                                        target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
                                 <?php endif; ?>
                             </div>
                         </div>
                         <div class="row justify-content-center mt-3">
-                            <h6 class="col-12 col-md-6 text-center second-section-subheading-font mb-0"><?php the_sub_field('sub_heading'); ?></h6>
-                            <p class="col-12 col-md-9 text-center second-section-text-font"><?php the_sub_field('text'); ?></p>
+                            <h6 class="col-12 col-md-6 text-center section-two__subheading mb-0"><?php the_sub_field('sub_heading'); ?></h6>
+                            <p class="col-12 col-md-9 text-center section-two__description"><?php the_sub_field('text'); ?></p>
                         </div>
                     </div>
                 </div>
