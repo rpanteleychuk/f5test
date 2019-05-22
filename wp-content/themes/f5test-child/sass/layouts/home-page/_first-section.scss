@@ -1,3 +1,9 @@
-.section-1 {
+.section-one {
   min-height: 567px;
+  &__heading {
+    font: 700 45px/43px "Quattrocento", serif;
+  }
+  &__description {
+    font: 400 20px/31px "Quattrocento Sans", sans-serif;
+  }
 }

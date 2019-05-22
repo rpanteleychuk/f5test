@@ -20,11 +20,11 @@ Template Post Type: page
 
             if ($layout === 'first_section'): ?>
 
-                <div id="welcome" class="section-1 py-5"
+                <div id="welcome" class="section-one py-5"
                      style="background: url(<?php the_sub_field('background_image'); ?>) no-repeat center;  background-size: cover;">
                     <div class="container">
                         <div class="row justify-content-center my-5">
-                            <div class="col head-logo text-center">
+                            <div class="col text-center">
                                 <?php
 
                                 $image = get_sub_field('heading_logo');
@@ -39,12 +39,12 @@ Template Post Type: page
                         </div>
                         <div class="row justify-content-center my-4">
                             <div class="col pt-4">
-                                <h2 class="text-center text-white text-uppercase main-heading-font"><?php the_sub_field('heading'); ?></h2>
+                                <h2 class="text-center text-white text-uppercase section-one__heading"><?php the_sub_field('heading'); ?></h2>
                             </div>
                         </div>
                         <div class="row justify-content-center my-4">
                             <div class="col col-md-7">
-                                <p class="text-white description-font"><?php the_sub_field('main_text'); ?></p>
+                                <p class="text-white section-one__description"><?php the_sub_field('main_text'); ?></p>
                             </div>
                         </div>
                     </div>
